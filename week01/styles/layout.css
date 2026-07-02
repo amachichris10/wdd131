@@ -30,6 +30,10 @@ main {
     background-color: #eee;
 }
 
+#course-title {
+    display: block;
+}
+
 .navigation {
     list-style: none;
     display: flex;
@@ -49,4 +53,17 @@ main {
     padding: 0.75rem;
     text-decoration: none;
     text-align: center;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+        /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+    }
 }
