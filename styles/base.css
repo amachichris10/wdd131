@@ -63,9 +63,9 @@ nav ul li {
 }
 
 main {
+    padding: 0 3rem;
     background: rgb(255, 255, 255);
     grid-column: 1 / 4;
-
     display: grid;
     grid-template: auto 1fr / 1fr 1fr 1fr;
 }
@@ -78,7 +78,7 @@ h1 {
 
 section {
     margin: 1rem;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     border: 1px solid rgb(174, 174, 174);
     border-radius: 10px;
 }
