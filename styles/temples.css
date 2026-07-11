@@ -16,6 +16,12 @@ header {
     background-color: rgb(58, 34, 104);
 }
 
+#header-label {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 #menu {
     font-size: 2rem;
     border: 0;
@@ -26,7 +32,7 @@ header {
     right: 1rem;
 }
 
-h1.open {
+#header-label.open {
     display: none;
 }
 
