@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cristofer Amachi - Peru - Characteristics and wheater details. Machu Picchu hero image.">
+    <meta name="author" content="Cristofer Amachi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header role="banner">
+        <h1>Peru</h1>
+    </header>
+    <main role="main">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/peru-large.webp">
+            <img src="images/peru-small.webp" alt="machu-picchu-peru-small">
+        </picture>
+        <div class="info data">
+            <h2>Data</h2>
+            <div class="container">
+                <div class="info-name">
+                    <p><b>Area:</b></p>
+                    <p><b>Population:</b></p>
+                    <p><b>Capital:</b></p>
+                    <p><b>Languages:</b></p>
+                    <p><b>Currency:</b></p>
+                    <p><b>Time Zone:</b></p>
+                    <p><b>Calling Code:</b></p>
+                    <p><b>Internet TLD:</b></p>
+                </div>
+                <div class="info-content">
+                    <p>1,285,215 sq km</p>
+                    <p>34,922,100</p>
+                    <p>Lima</p>
+                    <p>Spanish</p>
+                    <p>Nuevo SOl</p>
+                    <p>UTC-5</p>
+                    <p>+51</p>
+                    <p>.pe</p>
+                </div>
+            </div>
+        </div>
+        <div class="info weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" id="icon" alt="weather icon">
+            <div class="container">
+                <div class="info-name">
+                    <p><b>Temperature:</b></p>
+                    <p><b>Conditions:</b></p>
+                    <p><b>Wind:</b></p>
+                    <p><b>Wind Chill:</b></p>
+                </div>
+                <div class="info-content">
+                    <p>23 °C</p>
+                    <p>Sunny</p>
+                    <p>11 km/h</p>
+                    <p id="wind-chill"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <p>
+            <span id="current-year"></span>
+            <span>| Chris Amachi</span>
+            <span>| Lima, Peru</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

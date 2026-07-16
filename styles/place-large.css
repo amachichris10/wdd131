@@ -1,0 +1,44 @@
+@media screen and (min-width: 1000px) {
+    :root {
+            --primary-text-color: rgb(255, 255, 255);
+            --h2-bg-color: rgba(0, 91, 0, 0.8);
+            --container-bg-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .data {
+        top: 8rem;
+        left: 2rem;
+        width: 300px;
+        height: 350px;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        padding-left: 1rem;
+    }
+
+    h2 {
+        text-align: left;
+        position: relative;
+        left: -1.5rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        width: 15rem;
+        background-color: var(--h2-bg-color);
+        color: var(--primary-text-color);
+    }
+
+    .info {
+        position: absolute;
+        background-color: var(--container-bg-color);
+    }
+
+    #icon {
+        display: none;
+    }
+}

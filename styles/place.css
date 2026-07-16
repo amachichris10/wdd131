@@ -1,0 +1,91 @@
+:root {
+    --main-bg-color: rgb(163, 0, 0);
+    --primary-text-color: rgb(255, 255, 255);
+    --main-border-color: rgba(0, 91, 0);
+    --secondary-border-color: rgb(222, 222, 222);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+
+h1 {
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1rem solid var(--main-border-color);
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+picture img {
+    border-bottom: .2rem solid var(--main-bg-color);
+    width: 100%;
+    display: block;
+}
+
+.info {
+    padding: 1rem;
+}
+
+.data {
+    border-bottom: 1px solid var(--secondary-border-color);
+}
+
+.container {
+    display: flex;
+}
+
+.info-name {
+    flex: 1;
+}
+
+.info-name p {
+    text-align: right;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-content p {
+    text-align: left;
+}
+
+div p {
+    padding: .2rem;
+}
+
+#icon {
+    display: block;
+    margin: 0 auto;
+    width: 5rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    background: var(--main-bg-color);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+footer p {
+    color: var(--primary-text-color);
+    padding: 0 2rem;
+    text-align: center;
+    display: block;
+}
+
