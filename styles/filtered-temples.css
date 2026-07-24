@@ -1,0 +1,123 @@
+:root {
+    --card-bg-color: rgb(230, 230, 230);
+    --main-color: rgb(58, 34, 104);
+    --card-border-color: rgb(196, 196, 196);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+#header-label {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+
+#header-label.open {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+    color: rgb(255, 255, 255);
+}
+
+#menu.open::before {
+    content: "X";  
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation a {
+    font-size: 1.5rem;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navigation a:hover {
+    color: rgb(189, 194, 255);
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color:rgb(0, 0, 0);
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+section {
+    background-color: var(--card-bg-color);
+    text-align: center;
+    border: solid 1px var(--card-border-color);
+    padding-top: 1rem;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+.label {
+    color: var(--main-color);
+}
