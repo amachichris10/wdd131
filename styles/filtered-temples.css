@@ -1,7 +1,9 @@
 :root {
     --card-bg-color: rgb(230, 230, 230);
     --main-color: rgb(58, 34, 104);
+    --hover-color: rgb(189, 194, 255);
     --card-border-color: rgb(196, 196, 196);
+    --text-color: rgb(255, 255, 255);
 }
 
 * {
@@ -11,19 +13,12 @@
     font-family: "Roboto", sans-serif;
 }
 
-h1 {
-    text-align: left;
-    font-size: 1.5rem;
-    color:rgb(255, 255, 255);
-    padding: 1rem;
-}
-
 header {
     background-color: var(--main-color);
 }
 
 #header-label {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 1.5rem;
     padding: 1rem;
 }
@@ -32,7 +27,6 @@ header {
     font-size: 2rem;
     border: 0;
     background: none;
-    color: #000;
     position: absolute;
     top: .5rem;
     right: 1rem;
@@ -44,7 +38,7 @@ header {
 
 #menu::before {
     content: "☰";
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
 }
 
 #menu.open::before {
@@ -61,11 +55,11 @@ header {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
 }
 
 .navigation a:hover {
-    color: rgb(189, 194, 255);
+    color: var(--hover-color);
     font-weight: 700;
 }
 
@@ -77,7 +71,7 @@ main h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
-    color:rgb(0, 0, 0);
+    
 }
 
 .temple-gallery {
@@ -103,7 +97,7 @@ figcaption {
 footer {
     padding: 1rem;
     background-color: var(--main-color);
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     text-align: center;
 }
 
