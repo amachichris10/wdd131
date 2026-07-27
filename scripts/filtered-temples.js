@@ -99,7 +99,7 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
     headerLabel.classList.toggle('open');
 
-    
+
 });
 
 
