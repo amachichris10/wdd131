@@ -16,6 +16,24 @@ img {
     margin: 0px;
 }
 
+.secondary-bg {
+    background-color: #FFD3A1;
+    color: #000;
+    padding: 1rem;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
 h2 {
     margin-top: 3rem;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-weight: 700;
 }
