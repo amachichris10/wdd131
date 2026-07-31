@@ -5,12 +5,15 @@
     <meta name="description" content="Form page for WDD 131. Product Review form web site. Cristofer Amachi">
     <meta name="author" content="Cristofer Amachi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review WDD 131 Cristofer Amachi</title>
     <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
         rel="stylesheet">
+
         <script src="scripts/form.js" defer></script>
 </head>
 <body>
@@ -22,26 +25,26 @@
             <fieldset>
                 <label>Product Name 
                     <select id="product-name" name="subject" required>
-                        <option value="" selected disabled>Choose a Product ...</option>
+                        <option value="" selected disabled>Select a Product ...</option>
                     </select>
                 </label>
                 <div class="margin-title">Overall Rating</div>
                 <div class="rating-container">
-                    <label class="rating">☆<input type="radio" name="rating" value="1" required></label>
-                    <label class="rating">☆☆<input type="radio" name="rating" value="2"></label>
-                    <label class="rating">☆☆☆<input type="radio" name="rating" value="3"></label>
-                    <label class="rating">☆☆☆☆<input type="radio" name="rating" value="4"></label>
-                    <label class="rating">☆☆☆☆☆<input type="radio" name="rating" value="5"></label>
+                    <label class="rating">☆<input id="rating-1" type="radio" name="rating" value="1" required></label>
+                    <label class="rating">☆☆<input id="rating-2" type="radio" name="rating" value="2"></label>
+                    <label class="rating">☆☆☆<input id="rating-3" type="radio" name="rating" value="3"></label>
+                    <label class="rating">☆☆☆☆<input id="rating-4" type="radio" name="rating" value="4"></label>
+                    <label class="rating">☆☆☆☆☆<input id="rating-5" type="radio" name="rating" value="5"></label>
                 </div>
                 
 
-                <label>Date of Installation <input type="date" name="completeDate" required></label>
+                <label>Date of Installation <input id="date" type="date" name="completeDate" required></label>
 
                 <div class="margin-title">Which features did you find useful in the product? (Check all that apply)</div>
-                <label><input type="checkbox" name="durability" value="durability"> Durability</label>
-                <label><input type="checkbox" name="easeOfUse" value="easeOfUse"> Ease of Use</label>
-                <label><input type="checkbox" name="performance" value="performance"> Performance</label>
-                <label><input type="checkbox" name="design" value="design"> Design</label>
+                <label><input id="durability" type="checkbox" name="durability" value="durability"> Durability</label>
+                <label><input id="easeOfUse" type="checkbox" name="easeOfUse" value="easeOfUse"> Ease of Use</label>
+                <label><input id="performance" type="checkbox" name="performance" value="performance"> Performance</label>
+                <label><input id="design" type="checkbox" name="design" value="design"> Design</label>
 
                 <label>Written Review (Optional)<textarea name="review" id="review"></textarea></label>    
                 <label>Your Name (Optional)<input type="text" name="username" id="username"></label>
