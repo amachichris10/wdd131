@@ -95,11 +95,6 @@ input[type=checkbox] {
     display: flex;
 }
 
-fieldset {
-    border: none;
-    padding: 0;
-}
-
 footer {
     background: var(--main-bg);
     padding: 2rem;
