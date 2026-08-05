@@ -1,0 +1,75 @@
+:root {
+    --card-bg-color: rgb(230, 230, 230);
+    --main-color: #FF9D2E;
+    --hover-color: #3d3d3d;
+    --card-border-color: rgb(196, 196, 196);
+    --text-color: #000;
+    --opacity-bg: rgba(255, 255, 255, 0.5);
+    --border-radius: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+form {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+input {
+    display: block;
+    font-size: 2rem;
+}
+
+input[type=checkbox] {
+    display: inline;
+    height: 4rem;
+    width: 4rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
+
+div {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+input[type=text],
+input[type=email] {
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.signup-header {
+    margin: 0 2rem;
+}
+
+.home-button {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 2rem 4rem 10rem 4rem;
+    display: block;
+    text-align: center;
+}

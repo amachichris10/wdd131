@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Project</title>
+    <meta name="description"
+        content="Cristofer Amachi - WDD 131 - Informative website about tours in the peruvian Amazon.">
+    <meta name="author" content="Cristofer Amachi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet" href="styles/project-large.css">
+        <link rel="stylesheet" href="styles/activities.css">
+        <script src="scripts/project.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2 id="header-label">Peru Tours</h2>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-container">
+            <h1 id="hero-title">Popular Activities</h1>
+            <a class="signup-button" href="">Sign Up for News</a>
+            <img src="images/secondary-hero.webp" alt="amazon" id="secondary-hero-img">
+        </div>
+        <h1>What can you find here?</h1>
+        <div class="card-gallery">
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/birdwatching.webp" alt="animal" class="info-img top-focus" loading="lazy">
+                    <h2>Wildlife and Bird Watching</h2>
+                    <p>Spot pink river dolphins, giant otters, sloths, and hundreds of bird species in reserves
+                        like Pacaya-Samiria National Reserve and Tambopata.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/macaw-clay-lick.webp" alt="animal" class="info-img center-focus" loading="lazy">
+                    <h2>Macaw Clay Lick Visits</h2>
+                    <p>Watch hundreds of colorful parrots and macaws gather at mineral-rich river cliffs, especially
+                        around Tambopata or Manu.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/nightwalk.webp" alt="animal" class="info-img center-focus" loading="lazy">
+                    <h2>Night Safari Walks</h2>
+                    <p>Explore the dark jungle with a guide to see tarantulas, caimans, tree frogs, and bioluminescent
+                        fungi.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/canopy-walk.webp" alt="animal" class="info-img center-focus" loading="lazy">
+                    <h2>Canopy Walkways</h2>
+                    <p>Walk across high suspension bridges to view the rainforest from the treetops.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="info-card">
+                    <img src="images/canoeing.webp" alt="animal" class="info-img center-focus" loading="lazy">
+                    <h2>River Cruises and Canoeing</h2>
+                    <p>Take boat rides or kayak along the Amazon River and its tributaries to explore oxbow lakes
+                        and spot aquatic life.</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>
+            <span id="current-year"></span>
+            <span>| Chris Amachi</span>
+            <span>| Lima, Peru</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

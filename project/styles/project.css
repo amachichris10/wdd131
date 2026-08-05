@@ -1,0 +1,146 @@
+:root {
+    --card-bg-color: rgb(230, 230, 230);
+    --main-color: #FF9D2E;
+    --hover-color: #3d3d3d;
+    --card-border-color: rgb(196, 196, 196);
+    --text-color: #000;
+    --opacity-bg: rgba(255, 255, 255, 0.5);
+    --border-radius: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+#header-label {
+    color: var(--text-color);
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+#menu {
+    font-size: 4rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#header-label.open {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--text-color);
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation a {
+    font-size: 2rem;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation a:hover {
+    color: var(--hover-color);
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+#hero-title {
+    margin: 1rem;
+    font-size: 4rem;
+    position: absolute;
+    background-color: var(--opacity-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.signup-button {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    position: absolute;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 20rem 1rem 0 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+
+.card-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    margin: 0;
+}
+
+
+
+.card-container {
+    margin-bottom: 4rem;
+}
+
+.info-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.top-focus {
+    object-position: center 10%;
+}
+
+.center-focus {
+    object-position: center;
+}
+
+.info-card h2 {
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.info-card p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+footer {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-align: center;
+}

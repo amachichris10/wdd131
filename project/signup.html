@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <meta name="description"
+        content="Cristofer Amachi - WDD 131 - Sign Up for updates on popular places in the peruvian Amazon.">
+    <meta name="author" content="Cristofer Amachi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/signup.css">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2 id="header-label">Peru Tours</h2>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="signup-header">Sign up for news of fun activities and popular places</h1>
+        <form method="get" action="thankyou.html">
+            <label for="name">Name* <input type="text" name="name" id="name" required></label>
+            <label for="name">Email* <input type="email" name="email" id="email" required></label>
+            <div>Favorite things:</div>
+            <label class="checkbox-label" for="animals"><input id="animals" type="checkbox" name="animals"
+                    value="animals"> Animals</label>
+            <label class="checkbox-label" for="food"><input id="food" type="checkbox" name="food" value="food">
+                Food</label>
+            <label class="checkbox-label" for="traditions"><input id="traditions" type="checkbox" name="traditions"
+                    value="traditions">
+                Traditions</label>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="current-year"></span>
+            <span>| Chris Amachi</span>
+            <span>| Lima, Peru</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
