@@ -109,7 +109,7 @@ h1 {
 
 
 
-.card-container {
+.card {
     margin-bottom: 4rem;
 }
 
@@ -127,12 +127,12 @@ h1 {
     object-position: center;
 }
 
-.info-card h2 {
+.card h2 {
     padding: 2rem;
     font-size: 3rem;
 }
 
-.info-card p {
+.card p {
     font-size: 1.8rem;
     padding: 0 2rem;
 }
